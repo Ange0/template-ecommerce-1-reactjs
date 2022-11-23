@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
-function App() {
+function Home() {
   return (
     <div className='px-40 2xl:px-0 bg-white h-screen'>
       <div className='bg-white fixed w-1/4 -right-[2000px] h-full bg-gradient-to-t from-white via-[#faeee5] to-[#f08255] overflow-auto z-50'>
@@ -29,11 +29,11 @@ function App() {
           {/* header */}
           <div className='flex justify-between py-8 border-b text-sm'>
             <nav className='flex space-x-6 items-center'>
-                <img className="rounded-md w-20" src="/logo.svg"/>
-                <a className="text-[#fd8f62] font-bold" href='#'>Home</a>
-                <a href='#'>Shop</a>
-                <a href='#'>Pages</a>
-                <a href='#'>Blog</a>
+                <img className="rounded-md w-20" src="/logo.svg" alt=""/>
+                <a className="text-[#fd8f62] font-bold" href='/#'>Home</a>
+                <a  href='/#'>Shop</a>
+                <a href='/#'>Pages</a>
+                <a href='/#'>Blog</a>
             </nav>
             <div className='flex space-x-4 text-sm'>
                 <div className="flex space-x-2 items-center">
@@ -225,21 +225,21 @@ function App() {
             </div>
             <div className="grid grid-cols-9 gap-10">
                 <div className="flex flex-col space-y-8 col-span-3">
-                    <img src="/illustrations/i-1.svg" />
+                    <img src="/illustrations/i-1.svg" alt="" />
                    <div>
                       <h1 className="mt-4 font-bold text-lg">Free delivery</h1>
                       <p className="mt-2">JE suis cool</p>
                    </div>
                 </div>
                 <div className="flex flex-col space-y-8 col-span-3">
-                    <img src="/illustrations/i-2.svg" />
+                    <img src="/illustrations/i-2.svg" alt="" />
                    <div>
                       <h1 className="mt-4 font-bold text-lg">Packages in 2 days</h1>
                       <p className="mt-2">JE suis cool</p>
                    </div>
                 </div>
                 <div className="flex flex-col space-y-8 col-span-3">
-                    <img src="/illustrations/i-3.svg" />
+                    <img src="/illustrations/i-3.svg"  alt="" />
                    <div>
                       <h1 className="mt-4 font-bold text-lg">7j/7 for you</h1>
                       <p className="mt-2">JE suis cool</p>
@@ -259,7 +259,7 @@ function App() {
                   </svg> 
               </div> 
               <div className='flex justify-center p-2 pb-12'>
-                <img className="cursor-pointer w-28" src="/trending-1.svg" />
+                <img className="cursor-pointer w-28" src="/trending-1.svg" alt=""/>
               </div>
               <div className='flex divide-x items-center bg-black w-full rounded-bl-md rounded-br-md absolute -bottom-1'>
                   <div className='p-2 cursor-pointer'>
@@ -756,4 +756,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
