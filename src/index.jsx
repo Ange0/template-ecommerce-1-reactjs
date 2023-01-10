@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import './index.css';
 import Home from './Pages/Home';
 import Shopping from './Pages/Shopping';
@@ -9,14 +10,20 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='/shopping'>
-          <Shopping />
-        </Route>
-    </Router>
+      <Router>
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route path='/shopping'>
+              <Shopping />
+            </Route>
+            <Route>
+              <div>Error 404</div>
+            </Route>
+          </Switch>
+      </Router>
+    
   </React.StrictMode>
 );
 
